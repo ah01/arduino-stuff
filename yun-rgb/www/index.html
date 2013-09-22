@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>RGB Led</title>
+
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
+
+    <style type="text/css">
+
+        body{
+            font-family: Calibri, sans-serif;
+            font-size: 120%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 30px 10px;
+        }
+
+        .color {
+            padding: 40px 20px;
+            margin: 20px 20px;
+            -webkit-border-radius: 10px;
+        }
+
+        .color.red { background-color: #D00; }
+        .color.green { background-color: #0D0; }
+        .color.blue { background-color: #00D; }
+
+        .color input{
+            width: 100%;
+        }
+
+        input[type='range'] {
+            -webkit-appearance: none !important;
+            -webkit-border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px #333;
+            background-color: #aaa;
+            display: block;
+            height: 10px;
+            /*margin: 10px;*/
+            /*position: absolute;*/
+        }
+        input[type='range']::-webkit-slider-thumb {
+            -webkit-appearance: none !important;
+            -webkit-border-radius: 22px;
+            background-color: #AAA;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#AAA));
+            border: 1px solid #666;
+            height: 44px;
+            width: 44px;
+            -webkit-box-shadow:  1px 1px 2px 0px #333;
+        
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>RGB Led</h1>
+
+    <div class="color red">
+        <input type="range" id="red" min="0" max="255" step="1" value="0">
+    </div>
+
+    <div class="color green">
+        <input type="range" id="green" min="0" max="255" step="1" value="0">
+    </div>
+
+    <div class="color blue">
+        <input type="range" id="blue" min="0" max="255" step="1" value="0">
+    </div>
+
+    <div>
+        <span id="color">000000</span>
+    </div>
+
+    <script type="text/javascript">
+
+    function update()
+    {
+        var r = document.getElementById("red").value;
+        var g = document.getElementById("green").value;
+        var b = document.getElementById("blue").value;
+
+        var c = toHex(r) + toHex(g) + toHex(b);
+
+        document.getElementById("color").innerText = "#" + c;
+
+        send(c);
+    }
+
+    function toHex(n)
+    {
+        var h = (+n).toString(16).toUpperCase();
+        return h.length <= 1 ? "0" + h : h;
+    }
+
+    document.getElementById("red").onchange = document.getElementById("green").onchange = document.getElementById("blue").onchange = update;
+
+    //setInterval(update, 1000);
+    update();
+
+    function nil() {}
+
+    function send(c)
+    {
+        var script = document.createElement("script");
+        script.src = "http://10.0.0.2/data/put/color/" + c + "?jsonp=nil";
+        document.body.appendChild(script);
+        document.body.removeChild(script);
+    }
+
+    </script>
+
+</body>
+</html>

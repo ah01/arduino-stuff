@@ -1,6 +1,6 @@
 # *Arduino* Stuff #
 
-*A few sketches that are too small to stand-alone projects*
+*A few sketches that are too small for stand-alone projects*
 
 
 ## Yun RGB

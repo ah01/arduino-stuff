@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thermometer</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style type="text/css">
+        
+        body{
+            font-family: Calibri, sans-serif;
+            font-size: 150%;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 30px 10px;
+        }
+
+        #frame{
+            margin: 10px auto;
+            max-width: 400px;
+        }
+
+        #temperature {
+            font-size: 150%;
+            text-align: right;
+            color: #3cabf2;
+
+            height: 150px;
+            padding: 10px 10px 10px 60px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(thermo.png);
+        }
+
+        #temperature val{
+            font-size: 250%;
+        }
+
+        #time{
+            font-size: 65%;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="frame">
+        <h1>Teploměr</h1>
+        <div id="temperature">
+            <val>?</val>&nbsp;°C
+        </div>
+        <div id="time"></div>
+    </div>
+
+    <script type="text/javascript" src="zepto.min.js"></script>
+    <script type="text/javascript">
+
+        function updateData() {
+            $.getJSON("/data/get", function (data) {
+                printData(data.value);
+                setTimeout(updateData, 1000);
+            });
+        }
+
+        function printData(data) {
+            $("#temperature val").text(data.temp);
+            $("h1").text(data.name);
+            $("#time").text(Math.round(data.time/1000));
+        }
+
+        updateData();
+
+    </script>
+</body>
+</html>

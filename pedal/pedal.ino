@@ -1,8 +1,5 @@
 #include <Bounce.h>
 
-// http://arduino.cc/en/Reference/MouseKeyboard
-// http://arduino.cc/en/Reference/KeyboardModifiers
-
 #define PEDAL_PIN 2
 
 Bounce pedal = Bounce(PEDAL_PIN, 100); 

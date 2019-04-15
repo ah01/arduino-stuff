@@ -64,10 +64,3 @@ void set_value(const char *key, bool value)
 {
     Bridge.put(key, value ? "1" : "0");
 }
-
-
-
-
-
-
-

@@ -1,12 +1,14 @@
 # *Arduino* Stuff #
 
-*A few sketches that are too small for stand-alone projects*
+In tis repo you can file multiple arduino rpojects which are to small for stan-alone repos.
+But that doesnt mean that they are not interesting!
 
+## Smart rgb strip
 
-## Yun RGB
+In this project you will learn how to control your smart rgb led strip with arduino YUN.
 
-Controlling RGB led strip from web browser.
+[Picture](https://twitter.com/horcicaa/status/381399934102036480) 
 
-[detail](https://twitter.com/horcicaa/status/381399934102036480) 
+## Smart Led blinking
 
-
+This folder contains code how to make smart led. Using two buttons and led you can make flashlight that learns how to blink! (Spoiler: Thats not AI...)

@@ -1,9 +1,8 @@
-# Ukázky z přednášky „*Když Arduino potkalo Linux*“ #
+# Samples z from the lecture „*When Arduino meet Linux.*“ #
 
-Zdrojové kódy ukázek z přednášky konané v rámci **[SUT](http://sut.sh.cvut.cz/)**, 29. října 2013.
+Source codes of samples from lecture - **[SUT](http://sut.sh.cvut.cz/)**, 29. října 2013.
 
-- *thermometer* – 1. ukázka, HTTP Teploměr
-- *socket* – 2. ukázka, ovládání bezdrátové zásuvky pomocí HTTP
-- *socket2* – 3. ukázka, ovládání bezdrátové zásuvky pomocí zasílání zpráv pomocí [Mailbox](http://arduino.cc/en/Reference/YunMailboxConstructor)
-- *socket2-cli* - python skript pro zasílání zpráv v 3. ukázce
-
+- *thermometer* – 1. Sample, HTTP Thermometer
+- *socket* – 2. Sample, control of smart plug using HTTP.
+- *socket2* – 3. Sample, controlling smart plug using [Mailbox](http://arduino.cc/en/Reference/YunMailboxConstructor)
+- *socket2-cli* - Python script for sending messages from third sample.

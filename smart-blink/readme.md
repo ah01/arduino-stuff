@@ -4,8 +4,6 @@
 
 ![Photo of blinker](blink.gif)
 
-Demo utilized Arduiono with RBG LED and 2 buttons.
+Demo utilized Arduino with RBG LED and 2 buttons.
 
 Arduino can "learn" sequence you press on button A and then repeate it all over again. Button B is for enter to learning mode.
-
-

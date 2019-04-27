@@ -1,5 +1,5 @@
-# Controll RGB IR light bullb from Arduino #
+# Controlling RGB IR light bulb from Arduino #
 
-Small sketch illustrating control of RGB IR Light bulb [TECHNAXX Techlight RGB](http://www.alza.cz/technaxx-techlight-rgb-230v-e27-4-2w-d238269.htm) (or similar).
+Small sketch illustrating control of RGB IR light bulb. For this project can be used [TECHNAXX Techlight RGB](http://www.alza.cz/technaxx-techlight-rgb-230v-e27-4-2w-d238269.htm) light bulb or any similar.
 
 

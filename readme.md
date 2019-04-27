@@ -11,7 +11,7 @@ In this project you will learn how to control your smart RGB LED strip with Ardu
 
 ## Smart Led blinking
 
-This folder contains code how to make smart led. Using two buttons and led you can make flashlight that learns how to blink! (Spoiler: Thats not AI...)
+This folder contains code to make a smart LED. Using two buttons and an LED you can make a flashlight that learns how to blink! (Spoiler: That's not AI...)
 
 ## "SUT" folder
 

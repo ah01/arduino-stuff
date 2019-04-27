@@ -1,6 +1,6 @@
 # *Arduino* Stuff #
 
-In tis repo you can file multiple arduino rpojects which are to small for stan-alone repos.
+In this repo you can find multiple Arduino projects which are too small for standalone repos.
 But that doesnt mean that they are not interesting!
 
 ## Smart rgb strip

@@ -5,7 +5,7 @@ But that doesnt mean that they are not interesting!
 
 ## Smart rgb strip
 
-In this project you will learn how to control your smart rgb led strip with arduino YUN.
+In this project you will learn how to control your smart RGB LED strip with Arduino Yun.
 
 [Picture](https://twitter.com/horcicaa/status/381399934102036480) 
 
